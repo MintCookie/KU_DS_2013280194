@@ -1,0 +1,59 @@
+import os
+os.chdir("C:\Users\SuYeon\Desktop\Python")
+
+user = open("user.txt","r")
+friend = open("frined.txt","r")
+word = open("word.txt","r")
+
+print("""
+0. Read data files
+1. Display statistics
+2. Top 5 most tweeted words
+3. Top 5 most tweeted users
+4. Find users who tweeted a word(e.g, '연세대')
+5. Find all people who are friends of the above users
+6. Delete all mentions of a word
+7. Delete all users who mentioned a word
+8. Find strongly connected components
+9. Find shortest 
+99. Quit
+""")
+
+def menu_select(int(input("Select Menu: "))) :
+    if 0 :
+        users = user.readline()       
+        friends = friend.readline()
+        words = word.readline()
+
+        print("Total users: ",len(users/4))
+        print("Total friendship record: ",len(friends/4))
+        print("Total tweets: ",len(words/4))
+        
+    elif 1 :
+        print("Average number of friends: ")
+        print("Minimum friends: ")
+        print("Maximum number of friends: ")
+
+        print("Average tweets per user: ")
+        print("Minimum tweets per user: ")
+        
+    elif 2 :
+        
+    elif 3 :
+        
+    elif 4 :                               
+        
+    elif 5 :
+        
+    elif 6 :
+        
+    elif 7 :
+        
+    elif 8 :
+        
+    elif 9 :
+        
+    else :
+        quit()
+
+menu_select()
